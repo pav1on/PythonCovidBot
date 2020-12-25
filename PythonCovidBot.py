@@ -101,8 +101,6 @@ def mess(message):
             recovered = city['Recovered']
             deaths = city['Deaths']
             sick = city['Confirmed'] - city['Deaths'] - city['Recovered']
-            print(deaths)
-            print(type(deaths))
             bot.send_message(message.chat.id, 'Всего случаев заражения: ')
             bot.send_message(message.chat.id, confirmed)
             bot.send_message(message.chat.id, 'Больны сейчас: ')
