@@ -1,9 +1,7 @@
 import telebot
 from telebot import types
-import COVID19Py
 import requests
 
-covid19 = COVID19Py.COVID19()
 bot = telebot.TeleBot('1414591926:AAGan1P0YxfHNcbk2hAALP1icrDAuGjC_g0')
 
 
