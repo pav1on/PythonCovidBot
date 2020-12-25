@@ -101,14 +101,10 @@ def mess(message):
             recovered = city['Recovered']
             deaths = city['Deaths']
             sick = city['Confirmed'] - city['Deaths'] - city['Recovered']
-            bot.send_message(message.chat.id, 'Всего случаев заражения: ')
-            bot.send_message(message.chat.id, confirmed)
-            bot.send_message(message.chat.id, 'Больны сейчас: ')
-            bot.send_message(message.chat.id, sick)
-            bot.send_message(message.chat.id, 'Выздоровело: ')
-            bot.send_message(message.chat.id, recovered)
-            bot.send_message(message.chat.id, 'Смертей: ')
-            bot.send_message(message.chat.id, deaths)
+            bot.send_message(message.chat.id, 'Всего случаев заражения: ' + str(confirmed))
+            bot.send_message(message.chat.id, 'Больны сейчас: ' + str(sick))
+            bot.send_message(message.chat.id, 'Выздоровело: ' + str(recovered))
+            bot.send_message(message.chat.id, 'Смертей: ' + str(deaths))
 
 
 # Бот будет работать всегда
