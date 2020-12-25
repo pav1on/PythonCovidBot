@@ -90,7 +90,7 @@ def mess(message):
     elif get_message_bot == "мурманская область":
         location = "Мурманская область"
 
-    # Информация берется с ресурса стопкоронавирус.рф, парсится и записывается в определенные переменные, чтобы затем вывести
+    # Информация берется с ресурса https://covid19.rosminzdrav.ru/, парсится и записывается в определенные переменные, чтобы затем вывести
     data = requests.get("https://covid19.rosminzdrav.ru/wp-json/api/mapdata/").json()
 
     for city in data['Items']:
